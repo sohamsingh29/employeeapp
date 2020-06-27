@@ -5,9 +5,7 @@ const mongoose = require('mongoose')
 require('./Employee')
 app.use(bodyParser.json())
 
-const password ='LLx6awGWU6TExr6P'
-
-const mongoUri = 'mongodb+srv://cnq:LLx6awGWU6TExr6P@cluster0-kv5pq.mongodb.net/test?retryWrites=true&w=majority'
+const mongoUri = 'YOUR_MONGO_URI'
 const Employee =  mongoose.model('employee')
 
 mongoose.connect(mongoUri , {
